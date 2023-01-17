@@ -9,7 +9,7 @@ def return_Assembly101(modality, evaluation_file):
     
     # path to frames
     # please update root_data with the path where you saved the frames
-    root_data = 'Assembly101/frames/'
+    root_data = '../../datasets/assembly101/frames/'
 
     if not os.path.exists(root_data):
         print('Please update root_data with the path where you saved the frames.')
@@ -26,7 +26,7 @@ def return_Assembly101(modality, evaluation_file):
         filename_imglist_val = f'{path_to_data}/validation_mono.txt'
     elif modality == 'combined':
         filename_imglist_train = f'{path_to_data}/train_combined.txt'
-        filename_imglist_val = f'{path_to_data}/validation_combined.txt'
+        filename_imglist_val = f'{path_to_data}/custom_validation_combined.txt'
     else:
         raise NotImplementedError('no such modality:' + modality)
 

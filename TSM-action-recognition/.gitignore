@@ -1,0 +1,6 @@
+*.pyc
+*.npy
+*.csv
+*.txt
+*.pyth
+__pycache__/*
